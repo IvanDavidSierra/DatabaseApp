@@ -42,5 +42,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        initObject();
     }
+
+
+    //Método de inicialización de objetos con la vista
+    private void initObject(){
+        this.context = getApplicationContext();
+        this.etDocumento = findViewById(R.id.etDocumento);
+        this.etUsuario = findViewById(R.id.etUsuario);
+        this.etNombres = findViewById(R.id.etNombres);
+        this.etApellidos = findViewById(R.id.etApellidos);
+        this.etContraseña = findViewById(R.id.etContraseña);
+        this.listUsers = findViewById(R.id.lvLista);
+
+    }
+
 }
